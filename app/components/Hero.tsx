@@ -2,14 +2,22 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-start relative overflow-hidden" style={{background: '#171717'}}>
-      {/* Main gradient overlay matching Figma colors */}
-      <div className="absolute inset-0" style={{
-        background: `linear-gradient(135deg, 
-          #171717 0%, 
-          #9C356D 45%, 
-          #F9784C 75%, 
-          #FCD68B 100%)`
+    <section className="min-h-screen flex items-center justify-start relative overflow-hidden" style={{
+      background: `linear-gradient(to bottom, 
+        #000000 0%, 
+        #000000 40%, 
+        #FF7E32 70%, 
+        #FF4F81 85%, 
+        #A02EFF 100%)`
+    }}>
+      {/* Soft blur overlay for smooth glow effect */}
+      <div className="absolute inset-0 backdrop-blur-sm opacity-80" style={{
+        background: `linear-gradient(to bottom, 
+          rgba(0, 0, 0, 0.8) 0%, 
+          rgba(0, 0, 0, 0.4) 50%, 
+          rgba(255, 126, 50, 0.1) 75%, 
+          rgba(255, 79, 129, 0.1) 85%, 
+          rgba(160, 46, 255, 0.1) 100%)`
       }}></div>
       
       {/* Content */}
@@ -56,10 +64,10 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Decorative gradient orbs */}
-      <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full blur-3xl opacity-20" style={{background: '#9C356D'}}></div>
-      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-15" style={{background: '#F9784C'}}></div>
-      <div className="absolute top-1/2 right-1/3 w-48 h-48 rounded-full blur-2xl opacity-10" style={{background: '#FCD68B'}}></div>
+      {/* Decorative gradient orbs with updated colors */}
+      <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full blur-3xl opacity-15" style={{background: '#FF4F81'}}></div>
+      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-10" style={{background: '#FF7E32'}}></div>
+      <div className="absolute top-1/2 right-1/3 w-48 h-48 rounded-full blur-2xl opacity-8" style={{background: '#A02EFF'}}></div>
     </section>
   );
 };

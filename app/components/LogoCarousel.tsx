@@ -17,10 +17,7 @@ const LogoCarousel = () => {
 
   return (
     <section className="py-12 lg:py-16 overflow-hidden" style={{
-      background: `linear-gradient(135deg, 
-        #9C356D 0%, 
-        #F9784C 50%, 
-        #FCD68B 100%)`
+      background: `linear-gradient(342.27deg, #FFFAEF 24.53%, #FCD68B 37.59%, #F9784C 50.72%, #9C356D 62.85%, #171717 76.83%)`
     }}>
       <div className="relative">
         {/* Gradient overlays for smooth fade effect */}

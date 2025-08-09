@@ -1,11 +1,10 @@
-import { Navbar, Hero, LogoCarousel, About } from './components';
+import { Navbar, HeroWithCarousel, About } from './components';
 
 export default function Home() {
   return (
     <main className="relative">
       <Navbar />
-      <Hero />
-      <LogoCarousel />
+      <HeroWithCarousel />
       <About />
     </main>
   );
