@@ -24,9 +24,9 @@ const HeroWithCarousel = () => {
       <div className="min-h-screen flex items-center justify-start relative">
 
         
-        {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-28 ml-1 sm:ml-2 lg:ml-3">
-          <div className="max-w-5xl">
+        {/* Hero का सारा content यहाँ है */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-28 text-center lg:text-left lg:ml-1 lg:sm:ml-2 lg:lg:ml-3">
+          <div className="max-w-5xl mx-auto lg:mx-0">
             {/* Greeting */}
             <div className="flex items-center mb-8 lg:mb-10">
               <span className="text-2xl lg:text-3xl mr-3">👋</span>
@@ -176,9 +176,9 @@ const HeroWithCarousel = () => {
                 With a Visual Arts degree, my journey began in graphic design, crafting logos and marketing materials. Video editing followed, where meticulous attention to detail set my work apart, and I ventured into 3D modeling for immersive experiences.
               </p>
 
-              {/* CTA Button */}
+              {/* CTA Button - call करने के लिए */}
               <div className="pt-4">
-                <button className="bg-transparent border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-full font-medium text-sm lg:text-base hover:bg-gray-900 hover:text-white transition-all duration-300 tracking-wide">
+                <button className="w-full sm:w-auto bg-transparent border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-full font-medium text-sm lg:text-base hover:bg-gray-900 hover:text-white transition-all duration-300 tracking-wide">
                   SCHEDULE A CALL
                 </button>
               </div>
