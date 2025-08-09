@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Erica Jones - Creative Designer",
+  title: "computerchacha",
   description: "A young creative designer based in San Diego specializing in modern web design and user experience.",
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const HeroWithCarousel = () => {
-  // Logo data for carousel
+  // Logo data hai isme
   const logos = [
     { name: 'IPSUM', text: 'IPSUM', type: 'text' },
     { name: 'N-Logo', text: 'N', type: 'letter' },
@@ -13,12 +13,12 @@ const HeroWithCarousel = () => {
     { name: 'logoipsum-end', text: '◯ logoipsum', type: 'branded' },
   ];
 
-  // Duplicate the logos multiple times for seamless infinite scroll
+
   const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
 
   return (
     <section className="relative overflow-hidden" style={{
-      background: `linear-gradient(170deg, #000000 0%, #000000 25%, #1a0a0a 35%, #4a1f2a 45%, #8b3d5a 55%, #f2a07b 70%, #fff5e6 100%)`
+      background: `linear-gradient(170deg, #000000 0%, #000000 35%, #1a0a0a 45%, #4a1f2a 50%, #8b3d5a 55%, #f2a07b 60%, #fff5e6 100%)`
     }}>
       {/* Main Hero Section */}
       <div className="min-h-screen flex items-center justify-start relative">
@@ -68,18 +68,14 @@ const HeroWithCarousel = () => {
           </div>
         </div>
 
-        {/* Decorative gradient orbs with updated colors */}
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full blur-3xl opacity-15" style={{background: '#FF4F81'}}></div>
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-10" style={{background: '#FF7E32'}}></div>
-        <div className="absolute top-1/2 right-1/3 w-48 h-48 rounded-full blur-2xl opacity-8" style={{background: '#A02EFF'}}></div>
+
       </div>
 
-      {/* Logo Carousel Section - Seamlessly integrated */}
+      
       <div className="py-12 lg:py-16 overflow-hidden">
         <div className="relative">
 
           
-          {/* Moving logo container */}
           <div className="flex items-center">
             <div className="flex items-center space-x-12 sm:space-x-16 lg:space-x-20 xl:space-x-24 animate-scroll-left whitespace-nowrap">
               {duplicatedLogos.map((logo, index) => (
@@ -132,16 +128,15 @@ const HeroWithCarousel = () => {
                   background: `linear-gradient(135deg, #FCD68B, #F9784C, #9C356D)`
                 }}></div>
                 
-                {/* Main oval container */}
+                {/* oval container */}
                 <div className="relative w-72 h-96 sm:w-80 sm:h-[28rem] lg:w-96 lg:h-[32rem] xl:w-[26rem] xl:h-[36rem] rounded-full p-1 shadow-2xl" style={{
                   background: `linear-gradient(135deg, #F9784C, #9C356D)`
                 }}>
                   <div className="w-full h-full rounded-full overflow-hidden" style={{
                     background: `linear-gradient(135deg, #FCD68B, #F9784C, #9C356D)`
                   }}>
-                    {/* Actual freelancer image */}
+                    {/* freelancer image */}
                     <div className="w-full h-full rounded-full overflow-hidden relative">
-                      {/* Overlay gradient for depth and better text contrast */}
                       <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 via-transparent to-transparent z-10"></div>
                       
                       <Image
@@ -156,16 +151,14 @@ const HeroWithCarousel = () => {
                   </div>
                 </div>
                 
-                {/* Floating elements */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full opacity-60 animate-pulse" style={{background: '#F9784C'}}></div>
-                <div className="absolute -bottom-6 -left-6 w-12 h-12 rounded-full opacity-40 animate-pulse delay-1000" style={{background: '#9C356D'}}></div>
+
               </div>
             </div>
 
             {/* Content Section */}
-            <div className="order-1 lg:order-2 space-y-6">
+            <div className="order-1 lg:order-2 space-y-2">
               {/* Section Label */}
-              <div className="text-sm font-semibold tracking-wider uppercase" style={{color: '#F9784C'}}>
+              <div className="text-base lg:text-lg font-semibold tracking-wider uppercase mb-1" style={{color: '#F9784C'}}>
                 ABOUT
               </div>
 
